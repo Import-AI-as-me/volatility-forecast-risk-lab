@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+data/
+build/
+dist/
+reports/generated/decision_paths.csv
+reports/generated/forecasts.csv
+reports/generated/daily.csv

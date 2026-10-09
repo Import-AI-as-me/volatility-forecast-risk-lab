@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-09T08:37:44.301254+00:00",
+  "unit_tests_passed": 42,
+  "lint": "passed",
+  "fresh_vs_cached_summary_csv_hashes": "identical",
+  "modified_forecast_cache": "rejected",
+  "figure_visual_review": "all five figures inspected",
+  "markdown_internal_links": "all resolved",
+  "known_test_warning": "One upstream pandas/NumPy timedelta deprecation in the insufficient-training edge-case test."
+}

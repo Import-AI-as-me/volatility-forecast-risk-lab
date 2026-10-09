@@ -1,0 +1,10 @@
+{
+  "raw": 1.0,
+  "smooth": 1.0,
+  "band": 0.03,
+  "buffer": 0.5,
+  "static_scales": {
+    "BTCUSDT": 0.994276949778012,
+    "ETHUSDT": 0.994945116356817
+  }
+}

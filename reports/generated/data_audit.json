@@ -1,0 +1,448 @@
+{
+  "created_at_utc": "2026-10-09T08:27:31.008091+00:00",
+  "manifest_sha256": "ff87d4544bc46cbd7641419ce7628d516735def6a621ad0a9c0c83543410115b",
+  "daily_csv_sha256": "1cfb22b5ba3aae71df11461ea0d0a466f65ce836ac2bf3352682b3d1429010b8",
+  "rv_definition": "Sum of 288 adjacent five-minute squared close-to-close log returns, grouped by UTC bar-open date; no gap bridging.",
+  "return_definition": "Last close / first open - 1 within a complete UTC day.",
+  "missing_policy": "RV missing unless all 288 bars and adjacent returns are present; daily return and volume missing on incomplete days; no imputation.",
+  "symbols": [
+    {
+      "symbol": "BTCUSDT",
+      "raw_rows": 735602,
+      "days": 2557,
+      "expected_bars": 736416,
+      "start_date": "2019-01-01",
+      "end_date": "2025-12-31",
+      "duplicate_timestamps": 0,
+      "zero_volume_bars": 56,
+      "missing_bars": 814,
+      "gap_intervals": 21,
+      "max_gap_seconds": 36300,
+      "first_gap_timestamps_utc": [
+        "2019-03-12T08:00:00+00:00",
+        "2019-05-15T13:00:00+00:00",
+        "2019-06-07T22:15:00+00:00",
+        "2019-08-15T10:00:00+00:00",
+        "2019-11-13T04:20:00+00:00",
+        "2019-11-25T04:00:00+00:00",
+        "2020-02-09T03:00:00+00:00",
+        "2020-02-19T17:30:00+00:00",
+        "2020-03-04T11:30:00+00:00",
+        "2020-04-25T04:30:00+00:00",
+        "2020-06-28T05:30:00+00:00",
+        "2020-11-30T07:00:00+00:00",
+        "2020-12-21T18:00:00+00:00",
+        "2020-12-25T03:00:00+00:00",
+        "2021-02-11T05:00:00+00:00",
+        "2021-03-06T03:30:00+00:00",
+        "2021-04-20T04:30:00+00:00",
+        "2021-04-25T08:45:00+00:00",
+        "2021-08-13T06:30:00+00:00",
+        "2021-09-29T09:00:00+00:00"
+      ],
+      "incomplete_days": 21,
+      "invalid_rv_days": 22,
+      "valid_rv_days": 2535,
+      "invalid_open_days": 0,
+      "invalid_close_days": 0,
+      "invalid_day_examples": [
+        {
+          "date": "2019-01-01",
+          "bars": 288,
+          "rv_returns": 287,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-03-12",
+          "bars": 216,
+          "rv_returns": 215,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-05-15",
+          "bars": 168,
+          "rv_returns": 167,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-06-07",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-08-15",
+          "bars": 192,
+          "rv_returns": 191,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-11-13",
+          "bars": 260,
+          "rv_returns": 259,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-11-25",
+          "bars": 264,
+          "rv_returns": 263,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-02-09",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-02-19",
+          "bars": 218,
+          "rv_returns": 217,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-03-04",
+          "bars": 263,
+          "rv_returns": 262,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-04-25",
+          "bars": 258,
+          "rv_returns": 257,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-06-28",
+          "bars": 246,
+          "rv_returns": 245,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-11-30",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-12-21",
+          "bars": 242,
+          "rv_returns": 241,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-12-25",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-02-11",
+          "bars": 273,
+          "rv_returns": 272,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-03-06",
+          "bars": 270,
+          "rv_returns": 269,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-04-20",
+          "bars": 258,
+          "rv_returns": 257,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-04-25",
+          "bars": 232,
+          "rv_returns": 231,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-08-13",
+          "bars": 234,
+          "rv_returns": 233,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-09-29",
+          "bars": 264,
+          "rv_returns": 263,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2023-03-24",
+          "bars": 272,
+          "rv_returns": 271,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        }
+      ],
+      "first_day_has_previous_close": false
+    },
+    {
+      "symbol": "ETHUSDT",
+      "raw_rows": 735602,
+      "days": 2557,
+      "expected_bars": 736416,
+      "start_date": "2019-01-01",
+      "end_date": "2025-12-31",
+      "duplicate_timestamps": 0,
+      "zero_volume_bars": 56,
+      "missing_bars": 814,
+      "gap_intervals": 21,
+      "max_gap_seconds": 36300,
+      "first_gap_timestamps_utc": [
+        "2019-03-12T08:00:00+00:00",
+        "2019-05-15T13:00:00+00:00",
+        "2019-06-07T22:15:00+00:00",
+        "2019-08-15T10:00:00+00:00",
+        "2019-11-13T04:20:00+00:00",
+        "2019-11-25T04:00:00+00:00",
+        "2020-02-09T03:00:00+00:00",
+        "2020-02-19T17:30:00+00:00",
+        "2020-03-04T11:30:00+00:00",
+        "2020-04-25T04:30:00+00:00",
+        "2020-06-28T05:30:00+00:00",
+        "2020-11-30T07:00:00+00:00",
+        "2020-12-21T18:00:00+00:00",
+        "2020-12-25T03:00:00+00:00",
+        "2021-02-11T05:00:00+00:00",
+        "2021-03-06T03:30:00+00:00",
+        "2021-04-20T04:30:00+00:00",
+        "2021-04-25T08:45:00+00:00",
+        "2021-08-13T06:30:00+00:00",
+        "2021-09-29T09:00:00+00:00"
+      ],
+      "incomplete_days": 21,
+      "invalid_rv_days": 22,
+      "valid_rv_days": 2535,
+      "invalid_open_days": 0,
+      "invalid_close_days": 0,
+      "invalid_day_examples": [
+        {
+          "date": "2019-01-01",
+          "bars": 288,
+          "rv_returns": 287,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-03-12",
+          "bars": 216,
+          "rv_returns": 215,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-05-15",
+          "bars": 168,
+          "rv_returns": 167,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-06-07",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-08-15",
+          "bars": 192,
+          "rv_returns": 191,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-11-13",
+          "bars": 260,
+          "rv_returns": 259,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2019-11-25",
+          "bars": 264,
+          "rv_returns": 263,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-02-09",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-02-19",
+          "bars": 218,
+          "rv_returns": 217,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-03-04",
+          "bars": 263,
+          "rv_returns": 262,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-04-25",
+          "bars": 258,
+          "rv_returns": 257,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-06-28",
+          "bars": 246,
+          "rv_returns": 245,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-11-30",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-12-21",
+          "bars": 242,
+          "rv_returns": 241,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2020-12-25",
+          "bars": 276,
+          "rv_returns": 275,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-02-11",
+          "bars": 273,
+          "rv_returns": 272,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-03-06",
+          "bars": 270,
+          "rv_returns": 269,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-04-20",
+          "bars": 258,
+          "rv_returns": 257,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-04-25",
+          "bars": 232,
+          "rv_returns": 231,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-08-13",
+          "bars": 234,
+          "rv_returns": 233,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2021-09-29",
+          "bars": 264,
+          "rv_returns": 263,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        },
+        {
+          "date": "2023-03-24",
+          "bars": 272,
+          "rv_returns": 271,
+          "valid_open": true,
+          "valid_close": true,
+          "valid_rv": false
+        }
+      ],
+      "first_day_has_previous_close": false
+    }
+  ]
+}

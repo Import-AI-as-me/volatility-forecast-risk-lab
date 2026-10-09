@@ -1,0 +1,35 @@
+{
+  "created_at_utc": "2026-10-09T08:37:00.152036+00:00",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "versions": {
+    "volrisklab": "0.1.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "config_sha256": "01fb683f43b0847a2148a0b98fe59b5936d225d9849e3b1c300ea8bdc2d513cf",
+  "daily_sha256": "1cfb22b5ba3aae71df11461ea0d0a466f65ce836ac2bf3352682b3d1429010b8",
+  "forecast_source_sha256": "436856aed8b74f3bc12f7990b839724a9e57738076ec66024b3edd9a68ffb6e2",
+  "forecast_versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1"
+  },
+  "manifest_sha256": "ff87d4544bc46cbd7641419ce7628d516735def6a621ad0a9c0c83543410115b",
+  "protocol_sha256": "348576bf9bb51adb9f6baa020ba26c756362f1c19cdd7ad2d5f9bd9fba1abef5",
+  "source_sha256": {
+    "__init__.py": "627d0dc9a0cb4e738a663a4b507e3c3197b55c97c394d6455b7d7b4da461a36f",
+    "analysis.py": "1d14398da10a5629ca50dc70cb6776a5b6d984553c251126c446588834fb4f0b",
+    "cli.py": "533a448103fb51158ccfed3fc68c5d42a1baccf7e3fc73a671d56189df37383f",
+    "data.py": "acd88053ab2431c1b6d33499f781d07e78ac6405679218844df6e14d4eb4ad42",
+    "decisions.py": "ea495ce832772174147e50ca4db2fd6c5752228e8ef308201bd7459e858b8c4f",
+    "forecast.py": "436856aed8b74f3bc12f7990b839724a9e57738076ec66024b3edd9a68ffb6e2",
+    "reporting.py": "bcd996a5eac80a838294557d59ba888689a30fcc7093b598cf85845e5c165c2c",
+    "simulation.py": "8285b16639991bfb2187e1e1651fbbd9381ae36828a580a6d2f04c39b9f94c14"
+  },
+  "elapsed_seconds": 1.686062459135428,
+  "method": "fixed historical walk-forward; no live trading"
+}

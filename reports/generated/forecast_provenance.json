@@ -1,0 +1,11 @@
+{
+  "config_sha256": "01fb683f43b0847a2148a0b98fe59b5936d225d9849e3b1c300ea8bdc2d513cf",
+  "daily_sha256": "1cfb22b5ba3aae71df11461ea0d0a466f65ce836ac2bf3352682b3d1429010b8",
+  "forecast_source_sha256": "436856aed8b74f3bc12f7990b839724a9e57738076ec66024b3edd9a68ffb6e2",
+  "forecast_versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1"
+  },
+  "forecasts_sha256": "e7216324fe0cb98c1fa4a448e42eb16447f8ac796978eb9c24e31bcb4ed56b0b"
+}
